@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Find your sound after dark. Discover a soundtrack for every mood with After Hours.">
+  <title>After Hours — Find your sound after dark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="After Hours home"><span class="wordmark-mark">A<span>H</span></span><span>AFTER<span class="wordmark-light">HOURS</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home" data-view="home">Home</a>
+      <a class="nav-link" href="#discover" data-view="discover">Discover</a>
+      <a class="nav-link favorites-nav" href="#discover" data-view="favorites">Favorites <span class="nav-count" id="nav-count">0</span></a>
+    </nav>
+    <a class="header-cta" href="#discover">Find your frequency <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> YOUR NIGHT. YOUR FREQUENCY.</p>
+        <h1 id="hero-title">FIND YOUR<br>SOUND <span>AFTER</span><br><span class="outline-word">DARK<span class="period">.</span></span></h1>
+        <div class="hero-bottom"><p>Every mood has a soundtrack.</p><a class="circle-link" href="#discover" aria-label="Explore the collection">↓</a></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract red and black album artwork">
+        <div class="art-glow"></div><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-disc"><span class="disc-core"></span></div>
+        <div class="art-sticker">SIDE<br><b>A</b></div>
+        <div class="art-caption"><span>VOL. 01</span><span>AFTER THE<br>LAST CALL</span></div>
+        <div class="art-index">AH — 001 / 024</div>
+      </div>
+      <div class="hero-vertical">INDEPENDENT SOUNDS FOR THE IN-BETWEEN</div>
+      <div class="hero-footer"><span>SCROLL TO FEEL SOMETHING</span><span>EST. AFTER DARK&nbsp; · &nbsp;24 TRACKS</span></div>
+    </section>
+
+    <section class="discover-section" id="discover" aria-labelledby="discover-title">
+      <div class="section-topline"><span>01 / THE COLLECTION</span><span>CURATED FOR THE HOURS THAT MATTER</span></div>
+      <div class="section-heading"><div><p class="eyebrow">TUNE INTO YOURSELF</p><h2 id="discover-title">What’s the <span>mood?</span></h2></div><p class="section-intro">No skips. No small talk.<br>Just the right sound for right now.</p></div>
+      <div class="filter-row" role="group" aria-label="Filter songs by mood">
+        <button class="mood-filter selected" type="button" data-mood="All" aria-pressed="true"><span class="filter-num">00</span> All sounds <span class="filter-arrow">↗</span></button>
+        <button class="mood-filter" type="button" data-mood="Late Night" aria-pressed="false"><span class="filter-num">01</span> Late Night <span class="filter-arrow">↗</span></button>
+        <button class="mood-filter" type="button" data-mood="Heartbreak" aria-pressed="false"><span class="filter-num">02</span> Heartbreak <span class="filter-arrow">↗</span></button>
+        <button class="mood-filter" type="button" data-mood="No Feelings" aria-pressed="false"><span class="filter-num">03</span> No Feelings <span class="filter-arrow">↗</span></button>
+        <button class="mood-filter" type="button" data-mood="Main Character" aria-pressed="false"><span class="filter-num">04</span> Main Character <span class="filter-arrow">↗</span></button>
+      </div>
+      <div class="results-bar"><p id="results-label" aria-live="polite">THE FULL FREQUENCY</p><span id="track-count">08 TRACKS</span></div>
+      <div class="song-grid" id="song-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span class="empty-icon">↗</span><h3>Quiet in here.</h3><p>No tracks in this mood yet. Try another frequency.</p><button class="text-button" id="reset-filter" type="button">Back to all sounds <span>→</span></button></div>
+    </section>
+
+    <section class="closer" aria-label="A note for your night"><div class="closer-rule"></div><p class="eyebrow">A NOTE FOR YOUR NIGHT</p><p class="closer-line">Stay a little<br><span>longer.</span></p><div class="closer-meta"><span>GOOD MUSIC. NO ALGORITHM.</span><span>AFTER HOURS — ALWAYS OPEN</span></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark footer-mark" href="#home"><span class="wordmark-mark">A<span>H</span></span><span>AFTER<span class="wordmark-light">HOURS</span></span></a><span class="footer-note">MADE FOR THE SPACE BETWEEN NIGHT & MORNING.</span><a class="back-top" href="#home">BACK TO TOP ↑</a></footer>
+</body>
+</html>
